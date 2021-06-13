@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/salehubHomeFragment">
+
+    <fragment
+        android:id="@+id/oppDetailFragment"
+        android:name="com.example.salehub.OppDetailFragment"
+        android:label="OppDetailFragment"
+        tools:layout="@layout/fragment_opp_detail">
+        <action
+            android:id="@+id/action_oppDetailFragment_to_lostOppFragment"
+            app:destination="@id/lostOppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lostOppFragment"
+        android:name="com.example.salehub.LostOppFragment"
+        android:label="LostOppFragment"
+        tools:layout="@layout/fragment_lost_opp" />
+    <fragment
+        android:id="@+id/salehubHomeFragment"
+        android:name="com.example.salehub.SalehubHomeFragment"
+        android:label="SalehubHomeFragment"
+        tools:layout="@layout/fragment_salehub_home" />
+</navigation>
