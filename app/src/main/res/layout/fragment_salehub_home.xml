@@ -3,149 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/img_banner"
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/rv_picker"
+        android:foreground="@drawable/foreground_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@android:color/holo_blue_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_avatar_employee"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_avatar_my_profile"
-        android:padding="2dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/labelGreeting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="Good morning, "
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@id/img_avatar_employee"
-        app:layout_constraintStart_toEndOf="@id/img_avatar_employee"
-        app:layout_constraintTop_toTopOf="@id/img_avatar_employee" />
-
-    <TextView
-        android:id="@+id/tv_employee_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thanh Long"
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@id/img_avatar_employee"
-        app:layout_constraintStart_toEndOf="@id/labelGreeting"
-        app:layout_constraintTop_toTopOf="@id/img_avatar_employee" />
-
-    <ImageView
-        android:id="@+id/img_notification"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_notification_white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        android:translationY="-22dp"
-        app:layout_constraintBottom_toBottomOf="@id/img_banner"
-        app:layout_constraintTop_toBottomOf="@id/img_banner">
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="0dp"
-            android:layout_height="92dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="2dp"
-            app:cardUseCompatPadding="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvTotalPipeline"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    tools:text="Total Pipeline in 50 opps" />
-
-                <TextView
-                    android:id="@+id/tvTotalAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="6dp"
-                    android:textColor="@android:color/holo_blue_light"
-                    android:textSize="20sp"
-                    tools:text="$ 1,250,000" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="0dp"
-            android:layout_height="92dp"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="2dp"
-            app:cardUseCompatPadding="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvPendingPipeline"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    tools:text="Total Pipeline in 50 opps" />
-
-                <TextView
-                    android:id="@+id/tvPendingAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="6dp"
-                    android:textColor="@android:color/holo_orange_light"
-                    android:textSize="20sp"
-                    tools:text="$ 30,000" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-    </LinearLayout>
+        android:layout_height="150dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
