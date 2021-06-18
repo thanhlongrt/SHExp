@@ -21,6 +21,7 @@ class SalehubHomeFragment : Fragment() {
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mAdapter: PickerAdapter
     private lateinit var mLayoutManager: LinearLayoutManager
+    private lateinit var mNumberPicker: CustomNumberPicker
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -67,13 +68,18 @@ class SalehubHomeFragment : Fragment() {
                         snapHelper.findSnapView(mLayoutManager)?.let {
                             val pos = getChildAdapterPosition(it)
                             mAdapter.markAsSelected(pos)
-                            Log.e("SalehubHomeFragment", "onScrollStateChanged: ${data[pos]}")
-                            Toast.makeText(context, data[pos].textName, Toast.LENGTH_SHORT).show()
+//                            Log.e("SalehubHomeFragment", "onScrollStateChanged: ${data[pos]}")
+//                            Toast.makeText(context, data[pos].textName, Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
             })
         }
+
+        mNumberPicker = view.findViewById(R.id.np_picker)
+        mNumberPicker.maxValue = data.size - 1
+        mNumberPicker.displayedValues = data.map { it.textName }.toTypedArray()
+        mNumberPicker.wrapSelectorWheel = false
     }
 
 }
