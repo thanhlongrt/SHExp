@@ -1,26 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:backgroundTint="@color/white">
+    android:background="@color/colorWhite"
+    android:fillViewport="true"
+    android:paddingTop="@dimen/_50dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_picker"
-        android:layout_width="50dp"
-        android:layout_height="120dp"
-        android:foreground="@drawable/foreground_recyclerview"
-        app:layout_constraintEnd_toStartOf="@id/np_picker"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.example.salehub.CustomNumberPicker
-        android:id="@+id/np_picker"
-        android:layout_width="50dp"
-        android:layout_height="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/rv_picker"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btn_navigate_to_rating_bar_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RatingBar" />
+
+            <Button
+                android:id="@+id/btn_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account" />
+
+            <Button
+                android:id="@+id/btn_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anim" />
+
+            <Button
+                android:id="@+id/btn_my_canvas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Canvas" />
+
+            <Button
+                android:id="@+id/btn_fan_controller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fan Controller" />
+
+            <Button
+                android:id="@+id/btn_slide_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slide Bar" />
+
+            <Button
+                android:id="@+id/btn_ruler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruler" />
+
+            <Button
+                android:id="@+id/btn_fan_lottie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fan Lottie" />
+
+            <Button
+                android:id="@+id/btn_swipe_to_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swipe to del" />
+
+            <Button
+                android:id="@+id/btn_step_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step RV" />
+
+            <Button
+                android:id="@+id/btn_camera_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CameraX" />
+
+            <Button
+                android:id="@+id/btn_number_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number Picker" />
+
+            <Button
+                android:id="@+id/btn_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otp" />
+
+            <Button
+                android:id="@+id/btn_choose_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Address" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/ll1">
+
+            <Button
+                android:id="@+id/btnTooltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tooltip" />
+
+            <Button
+                android:id="@+id/btnZoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnWebview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WebView" />
+
+            <Button
+                android:id="@+id/btnCoroutineException"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coroutine Exception" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CustomCardViewStyle"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_20dp"
+            app:cardElevation="@dimen/_25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:backgroundTint="@color/color_red_salehub"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

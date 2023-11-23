@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.salehub.otp_edit_text.OtpEditText
+        android:id="@+id/edtOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/text_1"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:border_color="@color/neutral_1"
+        app:border_color_active="@color/primary_100"
+        app:border_color_error="@color/other_error"
+        app:layout_constraintTop_toTopOf="parent"
+        app:need_cursor="true" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="Mã OTP không chính xác"
+        android:textColor="@color/other_error"
+        android:textSize="@dimen/_14sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtOtp" />
+
+    <TextView
+        android:id="@+id/tvResendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_4dp"
+        android:text="Gửi lại OTP"
+        android:textColor="@color/accent_3"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtOtp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_1a1a1a"
+    android:minHeight="@dimen/_70dp">
+
+    <ImageView
+        android:id="@+id/ivStep"
+        android:layout_width="@dimen/_38dp"
+        android:layout_height="@dimen/_38dp"
+        android:background="@drawable/bg_step_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivStep"
+        app:layout_constraintEnd_toEndOf="@id/ivStep"
+        app:layout_constraintStart_toStartOf="@id/ivStep"
+        app:layout_constraintTop_toTopOf="@id/ivStep"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:includeFontPadding="false"
+        android:text="Stop in a safe place where there are no flammable  "
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivStep"
+        app:layout_constraintTop_toTopOf="@id/ivStep"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <com.example.salehub.step_reycler_view.RoundedDashView
+        android:id="@+id/dash_view_bottom"
+        android:layout_width="@dimen/_2dp"
+        android:layout_height="@dimen/_0dp"
+        android:minHeight="@dimen/_32dp"
+        app:dividerDashColor="@color/colorLightGrey"
+        app:dividerDashGap="@dimen/_6dp"
+        app:dividerDashWidth="@dimen/_2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/ivStep"
+        app:layout_constraintStart_toStartOf="@id/ivStep"
+        app:layout_constraintTop_toBottomOf="@id/ivStep"
+        app:orientation="vertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

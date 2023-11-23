@@ -1,9 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.3802083333333333" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/background_actual_revenue.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/background_circle_green_16alpha.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable/background_green_smart_fan_one.xml" value="0.1835" />
+        <entry key="app/src/main/res/drawable/background_remaining.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/background_tv_notification_count.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/bg_avatar_my_profile.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/bg_inner_shadow.xml" value="0.3527777777777778" />
+        <entry key="app/src/main/res/drawable/bg_step_number.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/bg_thumb.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/border_shadow.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/color_checkbox.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/custom_thumb.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/foreground_recyclerview.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/heart.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/ic_back_arrow.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/drawable/ic_bottom_left.xml" value="0.226" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.1965" />
+        <entry key="app/src/main/res/drawable/ic_notification_white.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/drawable/ic_star_outlined.xml" value="0.3641025641025641" />
+        <entry key="app/src/main/res/drawable/progress_seekbar.xml" value="0.33425925925925926" />
+        <entry key="app/src/main/res/drawable/progressbar_performance.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/drawable/ratingbar.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/drawable/ratingbar_empty.xml" value="0.3641025641025641" />
+        <entry key="app/src/main/res/drawable/ratingbar_filled.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/drawable/salehub_performance_progressbar.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/drawable/seekbar_progress.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/seekbar_style.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/shadow_cirle_drawable.xml" value="0.2105" />
+        <entry key="app/src/main/res/drawable/shape_cirle.xml" value="0.1935" />
+        <entry key="app/src/main/res/drawable/splash_screen.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/activity_second.xml" value="0.28815733219324496" />
+        <entry key="app/src/main/res/layout/dialog_rating_salehub.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/fragment_anim.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_camera_x.xml" value="0.28986746472851643" />
+        <entry key="app/src/main/res/layout/fragment_choose_address.xml" value="0.28986746472851643" />
+        <entry key="app/src/main/res/layout/fragment_coroutine.xml" value="0.28815733219324496" />
+        <entry key="app/src/main/res/layout/fragment_fan_controller.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_fan_lottie.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_my_canvas.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/fragment_number_picker.xml" value="0.28986746472851643" />
+        <entry key="app/src/main/res/layout/fragment_opp_detail.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/fragment_otp.xml" value="0.28986746472851643" />
+        <entry key="app/src/main/res/layout/fragment_rating_bar.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/fragment_recyclerview_swipe_to_show_delete.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_ruler_picker.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_sale_hub_account.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_salehub_home.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_slide_bar.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_step_rv.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_tooltip.xml" value="0.2890123984608807" />
+        <entry key="app/src/main/res/layout/fragment_transparent.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/fragment_webview.xml" value="0.2890123984608807" />
+        <entry key="app/src/main/res/layout/fragment_zoom.xml" value="0.2890123984608807" />
+        <entry key="app/src/main/res/layout/item_banner.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/item_car.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/item_my_account.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/item_one_touch.xml" value="0.28986746472851643" />
+        <entry key="app/src/main/res/layout/item_overview.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/item_performance.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/item_picker.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/item_step.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/layout_fill_otp.xml" value="0.28986746472851643" />
+        <entry key="app/src/main/res/layout/layout_seek_bar_thumb.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/layout_seekbar.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/layout_tooltip.xml" value="0.2890123984608807" />
+        <entry key="app/src/main/res/layout/view_range_seekbar.xml" value="0.353125" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.55" />
+      </ProjectState>
+    </option>
   </component>
 </project>

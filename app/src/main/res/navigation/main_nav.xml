@@ -6,22 +6,111 @@
     app:startDestination="@id/salehubHomeFragment">
 
     <fragment
-        android:id="@+id/oppDetailFragment"
-        android:name="com.example.salehub.OppDetailFragment"
-        android:label="OppDetailFragment"
-        tools:layout="@layout/fragment_opp_detail">
+        android:id="@+id/salehubHomeFragment"
+        android:name="com.example.salehub.home.SalehubHomeFragment"
+        android:label="SalehubHomeFragment"
+        tools:layout="@layout/fragment_salehub_home">
         <action
-            android:id="@+id/action_oppDetailFragment_to_lostOppFragment"
-            app:destination="@id/lostOppFragment" />
+            android:id="@+id/action_salehubHomeFragment_to_ratingBarFragment"
+            app:destination="@id/ratingBarFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_saleHubAccountFragmentData"
+            app:destination="@id/saleHubAccountFragmentData" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_animFragment"
+            app:destination="@id/animFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_myCanvasFragment"
+            app:destination="@id/myCanvasFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_fanControllerFragment"
+            app:destination="@id/fanControllerFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_slideBarFragment"
+            app:destination="@id/slideBarFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_rulerPickerFragment"
+            app:destination="@id/rulerPickerFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_fanLottieFragment"
+            app:destination="@id/fanLottieFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_recyclerViewSwipeToShowDeleteFragment"
+            app:destination="@id/recyclerViewSwipeToShowDeleteFragment" />
+        <action
+            android:id="@+id/action_salehubHomeFragment_to_stepRVFragment"
+            app:destination="@id/stepRVFragment" />
     </fragment>
     <fragment
-        android:id="@+id/lostOppFragment"
-        android:name="com.example.salehub.LostOppFragment"
-        android:label="LostOppFragment"
-        tools:layout="@layout/fragment_lost_opp" />
+        android:id="@+id/ratingBarFragment"
+        android:name="com.example.salehub.ratingbar.RatingBarFragment"
+        android:label="RatingBarFragment" />
     <fragment
-        android:id="@+id/salehubHomeFragment"
-        android:name="com.example.salehub.SalehubHomeFragment"
-        android:label="SalehubHomeFragment"
-        tools:layout="@layout/fragment_salehub_home" />
+        android:id="@+id/saleHubAccountFragmentData"
+        android:name="com.example.salehub.account.SaleHubAccountFragment"
+        android:label="SaleHubAccountFragmentData" />
+    <fragment
+        android:id="@+id/animFragment"
+        android:name="com.example.salehub.anim.AnimFragment"
+        android:label="AnimFragment" />
+    <fragment
+        android:id="@+id/myCanvasFragment"
+        android:name="com.example.salehub.drawing_on_canvas.MyCanvasFragment"
+        android:label="MyCanvasFragment" />
+    <fragment
+        android:id="@+id/fanControllerFragment"
+        android:name="com.example.salehub.fan_controller.FanControllerFragment"
+        android:label="FanControllerFragment" />
+    <fragment
+        android:id="@+id/slideBarFragment"
+        android:name="com.example.salehub.slide_bar.SlideBarFragment"
+        android:label="SlideBarFragment" />
+    <fragment
+        android:id="@+id/rulerPickerFragment"
+        android:name="com.example.salehub.ruler_picker.RulerPickerFragment"
+        android:label="RulerPickerFragment" />
+    <fragment
+        android:id="@+id/fanLottieFragment"
+        android:name="com.example.salehub.fan_lottie.FanLottieFragment"
+        android:label="FanLottieFragment" />
+    <fragment
+        android:id="@+id/recyclerViewSwipeToShowDeleteFragment"
+        android:name="com.example.salehub.ryclerview_swipe_to_show_delete_btn.RecyclerViewSwipeToShowDeleteFragment"
+        android:label="RecyclerViewSwipeToShowDeleteFragment" />
+    <fragment
+        android:id="@+id/stepRVFragment"
+        android:name="com.example.salehub.step_reycler_view.StepRVFragment"
+        android:label="StepRVFragment" />
+    <fragment
+        android:id="@+id/cameraXFragment"
+        android:name="com.example.salehub.camerax.CameraXFragment"
+        android:label="CameraXFragment" />
+    <fragment
+        android:id="@+id/numberPickerFragment"
+        android:name="com.example.salehub.number_picker.NumberPickerFragment"
+        android:label="NumberPickerFragment" />
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.salehub.otp_edit_text.OtpFragment"
+        android:label="OtpFragment" />
+    <fragment
+        android:id="@+id/chooseAddressFragment"
+        android:name="com.example.salehub.choose_address_view.ChooseAddressFragment"
+        android:label="ChooseAddressFragment" />
+    <fragment
+        android:id="@+id/tooltipFragment"
+        android:name="com.example.salehub.tooltip.TooltipFragment"
+        android:label="TooltipFragment" />
+    <fragment
+        android:id="@+id/zoomFragment"
+        android:name="com.example.salehub.zoom.ZoomFragment"
+        android:label="ZoomFragment" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.salehub.webview.WebViewFragment"
+        android:label="WebViewFragment" />
+    <fragment
+        android:id="@+id/coroutineFragment"
+        android:name="com.example.salehub.CoroutineFragment"
+        android:label="CoroutineFragment" />
 </navigation>
