@@ -1,9 +1,8 @@
 package com.example.salehub.stickyheader;
 
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.view.View;
 import android.widget.FrameLayout;
-
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 final class Preconditions {
 
